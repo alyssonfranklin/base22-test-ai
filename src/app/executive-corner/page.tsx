@@ -12,37 +12,37 @@ const executiveTeam = [
     id: 1,
     name: 'Mae C. Jamison',
     title: 'Chief Executive Officer',
-    image: 'https://via.placeholder.com/220x220?text=Mae+C.+Jamison'
+    image: 'https://dummyimage.com/220x220/92c83e/ffffff&text=Mae+C.+Jamison'
   },
   {
     id: 2,
     name: 'Buzz Aldrin',
     title: 'Chief Operating Officer',
-    image: 'https://via.placeholder.com/220x220?text=Buzz+Aldrin'
+    image: 'https://dummyimage.com/220x220/92c83e/ffffff&text=Buzz+Aldrin'
   },
   {
     id: 3,
     name: 'Sally Ride',
     title: 'Chief Financial Officer',
-    image: 'https://via.placeholder.com/220x220?text=Sally+Ride'
+    image: 'https://dummyimage.com/220x220/92c83e/ffffff&text=Sally+Ride'
   },
   {
     id: 4,
     name: 'John Glenn',
     title: 'Chief Technology Officer',
-    image: 'https://via.placeholder.com/220x220?text=John+Glenn'
+    image: 'https://dummyimage.com/220x220/92c83e/ffffff&text=John+Glenn'
   },
   {
     id: 5,
     name: 'Valentina Tereshkova',
     title: 'Chief Marketing Officer',
-    image: 'https://via.placeholder.com/220x220?text=Valentina+Tereshkova'
+    image: 'https://dummyimage.com/220x220/92c83e/ffffff&text=Valentina+Tereshkova'
   },
   {
     id: 6,
     name: 'Alexei Leonov',
     title: 'Chief Human Resources Officer',
-    image: 'https://via.placeholder.com/220x220?text=Alexei+Leonov'
+    image: 'https://dummyimage.com/220x220/92c83e/ffffff&text=Alexei+Leonov'
   }
 ];
 
@@ -52,28 +52,28 @@ const latestPosts = [
     id: 1,
     title: 'Can Space Gardening Help Astronauts Cope With Isolation?',
     description: 'Learn how NASA is exploring gardening as a therapeutic activity for long-duration spaceflight and its potential benefits for mental health.',
-    image: 'https://via.placeholder.com/300x180?text=Space+Gardening',
+    image: 'https://dummyimage.com/300x180/003087/ffffff&text=Space+Gardening',
     category: 'Wellness'
   },
   {
     id: 2,
     title: 'Understanding color theory: the color wheel and finding complem...',
     description: 'Explore the fundamentals of color theory and how it impacts our workspace environment, productivity, and psychological well-being.',
-    image: 'https://via.placeholder.com/300x180?text=Color+Theory',
+    image: 'https://dummyimage.com/300x180/003087/ffffff&text=Color+Theory',
     category: 'Design'
   },
   {
     id: 3,
     title: 'Can Space Support Help Stations with Extra Details on work?',
     description: 'Discover how support systems modeled after space mission control are improving workflow efficiency and communication in corporate environments.',
-    image: 'https://via.placeholder.com/300x180?text=Space+Support',
+    image: 'https://dummyimage.com/300x180/003087/ffffff&text=Space+Support',
     category: 'Productivity'
   },
   {
     id: 4,
     title: 'Standard Operating Procedures for requesting vacation',
     description: 'A comprehensive guide to our updated vacation request process, designed to streamline approvals and planning for both employees and managers.',
-    image: 'https://via.placeholder.com/300x180?text=Vacation+Procedures',
+    image: 'https://dummyimage.com/300x180/003087/ffffff&text=Vacation+Procedures',
     category: 'HR Policy'
   }
 ];
@@ -139,7 +139,7 @@ export default function ExecutiveCorner() {
       <section className={styles.featuredSection}>
         <div className={styles.featuredPost}>
           <Image 
-            src="https://via.placeholder.com/800x500?text=Executive+Speaking" 
+            src="https://dummyimage.com/800x500/003087/ffffff&text=Executive+Speaking" 
             alt="Featured post" 
             width={800} 
             height={500}
@@ -157,7 +157,7 @@ export default function ExecutiveCorner() {
         <div className={styles.welcomeMessage}>
           <div className={styles.videoContainer}>
             <Image 
-              src="https://via.placeholder.com/400x260?text=Astronaut+in+Space" 
+              src="https://dummyimage.com/400x260/000000/ffffff&text=Astronaut+in+Space" 
               alt="Pavel&apos;s Welcome Message" 
               width={400} 
               height={260}
