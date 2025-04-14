@@ -116,6 +116,7 @@ const Navigation = () => {
                           setActiveSection(item.href);
                           toggleDropdown(item.href);
                         }}
+                        style={{ backgroundColor: '#92c83e', color: 'white' }}
                       >
                         {item.label}
                       </NavigationMenu.Trigger>

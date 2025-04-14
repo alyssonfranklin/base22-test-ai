@@ -63,6 +63,20 @@ a {
   padding: 0 1rem;
 }
 
+/* Fix for buttonface issue in navigation */
+[data-radix-navigation-menu-trigger] {
+  background-color: #92c83e !important;
+  border: none !important;
+  color: white !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  appearance: none !important;
+}
+
+[data-radix-navigation-menu-trigger]:hover {
+  background-color: #7baa32 !important;
+}
+
 /* Card component base style */
 .card {
   background-color: var(--color-white);
