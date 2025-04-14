@@ -82,23 +82,23 @@ const latestPosts = [
 const faqs = [
   {
     id: 1,
-    question: 'What are our company\'s strategic goals for the next year?',
-    answer: 'Our strategic focus for the coming year centers on three key pillars: digital transformation across all business units, expansion into emerging markets with focus on sustainability, and enhancing customer experience through personalized solutions. We\'re committed to achieving 15% growth while maintaining our environmental and social responsibility commitments.'
+    question: 'What are our company&apos;s strategic goals for the next year?',
+    answer: 'Our strategic focus for the coming year centers on three key pillars: digital transformation across all business units, expansion into emerging markets with focus on sustainability, and enhancing customer experience through personalized solutions. We&apos;re committed to achieving 15% growth while maintaining our environmental and social responsibility commitments.'
   },
   {
     id: 2,
     question: 'How is the company addressing work-life balance for remote employees?',
-    answer: 'We\'ve implemented several initiatives including core collaboration hours (10am-3pm local time), meeting-free Fridays, and quarterly wellness days. Our HR team has also launched a remote work resource center and we\'ve adjusted our performance metrics to focus on outcomes rather than hours worked.'
+    answer: 'We&apos;ve implemented several initiatives including core collaboration hours (10am-3pm local time), meeting-free Fridays, and quarterly wellness days. Our HR team has also launched a remote work resource center and we&apos;ve adjusted our performance metrics to focus on outcomes rather than hours worked.'
   },
   {
     id: 3,
     question: 'What innovation initiatives are currently in development?',
-    answer: 'We\'re currently investing in three major innovation streams: AI-powered customer insights tools, sustainable product development, and next-generation collaborative workspaces. Our innovation lab has opened applications for internal teams to propose new ideas with dedicated funding available.'
+    answer: 'We&apos;re currently investing in three major innovation streams: AI-powered customer insights tools, sustainable product development, and next-generation collaborative workspaces. Our innovation lab has opened applications for internal teams to propose new ideas with dedicated funding available.'
   },
   {
     id: 4,
     question: 'How are we adapting to recent industry regulatory changes?',
-    answer: 'Our compliance team has developed a comprehensive roadmap to address all regulatory changes. We\'ve established a cross-functional task force, updated our internal policies, and scheduled mandatory training for affected departments. We\'re also engaging with industry associations to shape future regulations.'
+    answer: 'Our compliance team has developed a comprehensive roadmap to address all regulatory changes. We&apos;ve established a cross-functional task force, updated our internal policies, and scheduled mandatory training for affected departments. We&apos;re also engaging with industry associations to shape future regulations.'
   }
 ];
 
@@ -110,22 +110,22 @@ export default function ExecutiveCorner() {
     setOpenFaq(openFaq === id ? null : id);
   };
   
-  const scrollCarousel = (direction: 'prev' | 'next') => {
-    const carousel = document.getElementById('executive-carousel');
+  const scrollCarousel = (direction: "prev" | "next") => {
+    const carousel = document.getElementById("executive-carousel");
     if (carousel) {
       const scrollAmount = 230; // card width + gap
       const currentScroll = carousel.scrollLeft;
       
       carousel.scrollTo({
-        left: direction === 'next' 
+        left: direction === "next" 
           ? currentScroll + scrollAmount 
           : currentScroll - scrollAmount,
-        behavior: 'smooth'
+        behavior: "smooth"
       });
       
       // Update active slide for visual indicator
       const maxSlides = executiveTeam.length - Math.floor(carousel.clientWidth / 230);
-      const newActive = direction === 'next' 
+      const newActive = direction === "next" 
         ? Math.min(activeSlide + 1, maxSlides) 
         : Math.max(activeSlide - 1, 0);
         
@@ -158,7 +158,7 @@ export default function ExecutiveCorner() {
           <div className={styles.videoContainer}>
             <Image 
               src="https://via.placeholder.com/400x260?text=Astronaut+in+Space" 
-              alt="Pavel's Welcome Message" 
+              alt="Pavel&apos;s Welcome Message" 
               width={400} 
               height={260}
               className={styles.video}
@@ -170,7 +170,7 @@ export default function ExecutiveCorner() {
             </div>
           </div>
           <div className={styles.messageContent}>
-            <h3 className={styles.messageTitle}>Pavel's Welcome Message</h3>
+            <h3 className={styles.messageTitle}>Pavel&apos;s Welcome Message</h3>
             <p>Join our CEO as he shares updates and insights from his recent mission to improve workplace culture.</p>
           </div>
         </div>
@@ -222,11 +222,11 @@ export default function ExecutiveCorner() {
                 onClick={() => toggleFaq(faq.id)}
               >
                 {faq.question}
-                <span className={`${styles.accordionIcon} ${openFaq === faq.id ? styles.open : ''}`}>
+                <span className={`${styles.accordionIcon} ${openFaq === faq.id ? styles.open : ""}`}>
                   ▼
                 </span>
               </button>
-              <div className={`${styles.accordionContent} ${openFaq === faq.id ? styles.open : ''}`}>
+              <div className={`${styles.accordionContent} ${openFaq === faq.id ? styles.open : ""}`}>
                 <p>{faq.answer}</p>
               </div>
             </div>
@@ -246,7 +246,7 @@ export default function ExecutiveCorner() {
         <div className={styles.carouselContainer}>
           <button 
             className={`${styles.carouselNavButton} ${styles.prevButton}`}
-            onClick={() => scrollCarousel('prev')}
+            onClick={() => scrollCarousel("prev")}
             disabled={activeSlide === 0}
           >
             ←
@@ -272,7 +272,7 @@ export default function ExecutiveCorner() {
           
           <button 
             className={`${styles.carouselNavButton} ${styles.nextButton}`}
-            onClick={() => scrollCarousel('next')}
+            onClick={() => scrollCarousel("next")}
           >
             →
           </button>
