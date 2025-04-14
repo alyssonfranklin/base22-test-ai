@@ -1,0 +1,158 @@
+.header {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px var(--color-shadow);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.logoText {
+  margin-left: 0.5rem;
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.searchBar {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.searchInput {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  width: 200px;
+}
+
+.searchButton {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 0 4px 4px 0;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.userButton {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--color-white);
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.avatarRoot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  overflow: hidden;
+  user-select: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background-color: var(--color-white);
+}
+
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.avatarFallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.userName {
+  font-size: 0.9rem;
+}
+
+.dropdownContent {
+  min-width: 220px;
+  background-color: var(--color-white);
+  border-radius: 6px;
+  padding: 0.5rem;
+  box-shadow: 0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2);
+  animation-duration: 400ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.dropdownLabel {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 0.5rem;
+}
+
+.dropdownItem {
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
+  position: relative;
+  user-select: none;
+  outline: none;
+}
+
+.dropdownItem:hover {
+  background-color: var(--color-background);
+}
+
+.dropdownLink {
+  display: block;
+  text-decoration: none;
+  color: var(--color-text-primary);
+  padding: 0.5rem 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .searchBar {
+    display: none;
+  }
+  
+  .desktopOnly {
+    display: none;
+  }
+  
+  .logoText {
+    font-size: 1.2rem;
+  }
+}

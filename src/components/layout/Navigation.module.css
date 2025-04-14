@@ -1,0 +1,160 @@
+.navigation {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navLink {
+  display: block;
+  padding: 1rem 1.2rem;
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.navLink:hover,
+.navLink:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navLink.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+}
+
+.dropdownContent {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--color-white);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 4px 8px var(--color-shadow);
+  min-width: 200px;
+  z-index: 100;
+  animation-duration: 400ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.dropdownList {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.dropdownItem {
+  margin: 0;
+}
+
+.dropdownLink {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.dropdownLink:hover,
+.dropdownLink:focus {
+  background-color: var(--color-background);
+}
+
+.mobileMenuButton {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-white);
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-white);
+  position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-white);
+  left: 0;
+}
+
+.hamburger::before {
+  top: -6px;
+}
+
+.hamburger::after {
+  bottom: -6px;
+}
+
+@media (max-width: 768px) {
+  .mobileMenuButton {
+    display: block;
+  }
+  
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-secondary);
+    z-index: 100;
+  }
+  
+  .nav.mobileOpen {
+    display: block;
+  }
+  
+  .navList {
+    flex-direction: column;
+  }
+  
+  .dropdownContent {
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdownList {
+    padding: 0;
+  }
+  
+  .dropdownLink {
+    padding-left: 2rem;
+    color: var(--color-white);
+  }
+}

@@ -1,0 +1,33 @@
+.card {
+  background-color: var(--color-white);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.default {
+  border: 1px solid var(--color-border);
+}
+
+.outlined {
+  border: 1px solid var(--color-border);
+  box-shadow: none;
+}
+
+.elevated {
+  border: none;
+  box-shadow: 0 4px 12px var(--color-shadow);
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1.25rem 1.5rem;
+  margin: 0;
+  border-bottom: 1px solid var(--color-border);
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.cardContent {
+  padding: 1.5rem;
+}
