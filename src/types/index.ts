@@ -6,6 +6,12 @@ export interface NavItem {
   items?: NavItem[];
 }
 
+export interface Breadcrumb {
+  label: string;
+  href: string;
+  isActive?: boolean;
+}
+
 // User types
 export interface User {
   id: string;

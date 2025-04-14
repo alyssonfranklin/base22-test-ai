@@ -1,5 +1,5 @@
 .navigation {
-  background-color: var(--color-secondary);
+  background-color: #92c83e;
   color: var(--color-white);
   padding: 0;
 }
@@ -53,7 +53,7 @@
   background-color: var(--color-white);
   border-radius: 0 0 4px 4px;
   box-shadow: 0 4px 8px var(--color-shadow);
-  min-width: 200px;
+  min-width: 220px;
   z-index: 100;
   animation-duration: 400ms;
   animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
@@ -118,6 +118,50 @@
   bottom: -6px;
 }
 
+/* Breadcrumb styles */
+.breadcrumbContainer {
+  background-color: var(--color-background);
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.breadcrumbList {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.breadcrumbItem {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.breadcrumbItem:not(:last-child)::after {
+  content: '/';
+  margin: 0 0.5rem;
+  color: var(--color-text-light);
+}
+
+.breadcrumbLink {
+  color: var(--color-text-light);
+  text-decoration: none;
+}
+
+.breadcrumbLink:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.breadcrumbActive {
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
 @media (max-width: 768px) {
   .mobileMenuButton {
     display: block;
@@ -130,7 +174,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background-color: var(--color-secondary);
+    background-color: #92c83e;
     z-index: 100;
   }
   
@@ -156,5 +200,13 @@
   .dropdownLink {
     padding-left: 2rem;
     color: var(--color-white);
+  }
+  
+  .breadcrumbContainer {
+    padding: 0.5rem 0;
+  }
+  
+  .breadcrumbItem {
+    font-size: 0.75rem;
   }
 }
